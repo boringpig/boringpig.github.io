@@ -10,7 +10,7 @@ git下載
 SourceTree下載語法認識| 語法 | 描述 || —— | ———– ||git init|在local初始化repository||git add .|新增所有檔案到git||git add Readme.md|新增指定的檔案到git||git commit -m|對於新增的檔案發出commit||git commit -am|對於舊有的檔案修改後發出的add、comm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git入門">
-<meta property="og:url" content="http://boringpig.github.io/Git入門/index.html">
+<meta property="og:url" content="http://boringpig.github.io/Git/Git入門">
 <meta property="og:site_name" content="Jeffery Blog">
 <meta property="og:description" content="安裝
 git下載
@@ -79,7 +79,7 @@ SourceTree下載語法認識| 語法 | 描述 || —— | ———– ||git ini
       </header>
     
     <div class="article-meta">
-      <a href="/Git入門/" class="article-date">
+      <a href="/Git/Git入門" class="article-date">
   <time datetime="2016-07-27T07:40:08.000Z" itemprop="datePublished">2016-07-27</time>
 </a>
       
@@ -122,7 +122,7 @@ SourceTree下載語法認識| 語法 | 描述 || —— | ———– ||git ini
     
 <nav id="article-nav">
   
-    <a href="/Npm基本認識/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/uncategorized/Npm基本認識" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-title"><span>&lt;</span>&nbsp;
         
           Npm基本認識

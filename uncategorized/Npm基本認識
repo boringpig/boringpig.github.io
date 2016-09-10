@@ -15,7 +15,7 @@ npm install安裝套件
 npm install &amp;l">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Npm基本認識">
-<meta property="og:url" content="http://boringpig.github.io/Npm基本認識/index.html">
+<meta property="og:url" content="http://boringpig.github.io/uncategorized/Npm基本認識">
 <meta property="og:site_name" content="Jeffery Blog">
 <meta property="og:description" content="NPM安裝連結
 NodeJS下載常用語法
@@ -90,7 +90,7 @@ npm install &amp;l">
       </header>
     
     <div class="article-meta">
-      <a href="/Npm基本認識/" class="article-date">
+      <a href="/uncategorized/Npm基本認識" class="article-date">
   <time datetime="2016-07-27T07:58:02.000Z" itemprop="datePublished">2016-07-27</time>
 </a>
       
@@ -145,7 +145,7 @@ npm install &amp;l">
     
 <nav id="article-nav">
   
-    <a href="/Blog搭配Hexo主題/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/Framework/Blog搭配Hexo主題" id="article-nav-newer" class="article-nav-link-wrap">
       <div class="article-nav-title"><span>&lt;</span>&nbsp;
         
           Blog搭配Hexo主題
@@ -154,7 +154,7 @@ npm install &amp;l">
     </a>
   
   
-    <a href="/Git入門/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/Git/Git入門" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Git入門&nbsp;<span>&gt;</span></div>
     </a>
   
