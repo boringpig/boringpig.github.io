@@ -70,6 +70,10 @@
   <time datetime="2016-07-27T08:02:19.000Z" itemprop="datePublished">2016-07-27</time>
 </a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Sports/">Sports</a>
+  </div>
+
       
     </div>
     <div class="article-entry" itemprop="articleBody">
@@ -79,13 +83,13 @@
 <li>Git安裝</li>
 <li>如果不行<code>npm install hexo-cli -g</code> 可試看看<code>sudo npm install -g -unsafe-perm hexo</code> 就可以<h3 id="初始設定"><a href="#初始設定" class="headerlink" title="初始設定"></a>初始設定</h3></li>
 <li>先建立一個folder</li>
-<li><code>hexo init &lt;folder&gt;</code> 初始化就有hexo的預設主題 </li>
+<li><code>hexo init &lt;folder&gt;</code> 初始化就有hexo的預設主題</li>
 <li><code>hexo s</code> 在本機端即可預覽</li>
 <li><code>hexo new</code> 建立一個新的文章<h3 id="環境設定"><a href="#環境設定" class="headerlink" title="環境設定"></a>環境設定</h3></li>
 <li>先建立 <code>xxx.github.io</code> 的 repository</li>
 <li><code>npm install hexo-deployer-git --save</code>用來發佈到github的套件</li>
 <li><p>根目錄<code>.config.yml</code>設定</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">url: &lt;xxx.github.io&gt;</div><div class="line">root: &apos;/&apos;</div><div class="line">  .</div><div class="line">  .</div><div class="line">  .</div><div class="line">deploy: </div><div class="line">   type: git</div><div class="line">      repo: &lt;repository url&gt;</div><div class="line">      branch: [branch]</div></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">url: &lt;xxx.github.io&gt;</div><div class="line">root: &apos;/&apos;</div><div class="line">  .</div><div class="line">  .</div><div class="line">  .</div><div class="line">deploy:</div><div class="line">   type: git</div><div class="line">      repo: &lt;repository url&gt;</div><div class="line">      branch: [branch]</div></pre></td></tr></table></figure>
 </li>
 <li><p>設定完成後輸入 <code>hexo d</code> 發佈到github</p>
 </li>
