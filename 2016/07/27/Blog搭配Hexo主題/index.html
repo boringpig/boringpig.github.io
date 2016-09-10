@@ -5,40 +5,15 @@
   
   <title>Blog搭配Hexo主題 - Jeffery Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安裝
-NodeJS安裝
-Git安裝
-如果不行npm install hexo-cli -g 可試看看sudo npm install -g -unsafe-perm hexo 就可以初始設定
-先建立一個folder
-hexo init &amp;lt;folder&amp;gt; 初始化就有hexo的預設主題
-hexo s 在本機端即可預覽
-hexo new 建立一個新的文章環境設定
-先建立 xxx.github">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="Blog搭配Hexo主題">
 <meta property="og:url" content="http://boringpig.github.io/2016/07/27/Blog搭配Hexo主題/index.html">
 <meta property="og:site_name" content="Jeffery Blog">
-<meta property="og:description" content="安裝
-NodeJS安裝
-Git安裝
-如果不行npm install hexo-cli -g 可試看看sudo npm install -g -unsafe-perm hexo 就可以初始設定
-先建立一個folder
-hexo init &amp;lt;folder&amp;gt; 初始化就有hexo的預設主題
-hexo s 在本機端即可預覽
-hexo new 建立一個新的文章環境設定
-先建立 xxx.github">
-<meta property="og:updated_time" content="2016-09-10T06:40:33.000Z">
+<meta property="og:image" content="http://boringpig.github.io/images/github/hexo.png">
+<meta property="og:updated_time" content="2016-09-10T11:06:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog搭配Hexo主題">
-<meta name="twitter:description" content="安裝
-NodeJS安裝
-Git安裝
-如果不行npm install hexo-cli -g 可試看看sudo npm install -g -unsafe-perm hexo 就可以初始設定
-先建立一個folder
-hexo init &amp;lt;folder&amp;gt; 初始化就有hexo的預設主題
-hexo s 在本機端即可預覽
-hexo new 建立一個新的文章環境設定
-先建立 xxx.github">
+<meta name="twitter:image" content="http://boringpig.github.io/images/github/hexo.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -105,7 +80,9 @@ hexo new 建立一個新的文章環境設定
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h3><ul>
+        <img src="/images/github/hexo.png" width="800" height="342">
+<a id="more"></a>
+<h3 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h3><ul>
 <li>NodeJS安裝</li>
 <li>Git安裝</li>
 <li>如果不行<code>npm install hexo-cli -g</code> 可試看看<code>sudo npm install -g -unsafe-perm hexo</code> 就可以<h3 id="初始設定"><a href="#初始設定" class="headerlink" title="初始設定"></a>初始設定</h3></li>
@@ -116,7 +93,6 @@ hexo new 建立一個新的文章環境設定
 <li>先建立 <code>xxx.github.io</code> 的 repository</li>
 <li><code>npm install hexo-deployer-git --save</code>用來發佈到github的套件</li>
 <li><p>根目錄<code>.config.yml</code>設定</p>
-<a id="more"></a> 
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">url: &lt;xxx.github.io&gt;</div><div class="line">root: &apos;/&apos;</div><div class="line">  .</div><div class="line">  .</div><div class="line">  .</div><div class="line">deploy:</div><div class="line">   type: git</div><div class="line">      repo: &lt;repository url&gt;</div><div class="line">      branch: [branch]</div></pre></td></tr></table></figure>
 </li>
 <li><p>設定完成後輸入 <code>hexo d</code> 發佈到github</p>
