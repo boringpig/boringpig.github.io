@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Google Maps基本認識 - Jeffery Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="現在很多商業或是部落格的網站，強調地方的所在位置，不僅給地址還會用地圖給別人看，讓人可以清楚知道相對位置或是附近的店家。我覺得這個API蠻容易學習的，w3school 網站真的講得很棒。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Google Maps基本認識">
+<meta property="og:url" content="http://boringpig.github.io/uncategorized/Google-Maps基本認識/index.html">
+<meta property="og:site_name" content="Jeffery Blog">
+<meta property="og:description" content="現在很多商業或是部落格的網站，強調地方的所在位置，不僅給地址還會用地圖給別人看，讓人可以清楚知道相對位置或是附近的店家。我覺得這個API蠻容易學習的，w3school 網站真的講得很棒。">
+<meta property="og:image" content="http://boringpig.github.io/images/google/Map.jpg">
+<meta property="og:image" content="https://i.imgur.com/ilJDzct.png">
+<meta property="og:image" content="https://i.imgur.com/sWjA3yT.png">
+<meta property="og:image" content="https://i.imgur.com/FvZFFPC.png">
+<meta property="og:image" content="https://i.imgur.com/7SI1DX4.png">
+<meta property="og:updated_time" content="2016-09-12T14:21:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Google Maps基本認識">
+<meta name="twitter:description" content="現在很多商業或是部落格的網站，強調地方的所在位置，不僅給地址還會用地圖給別人看，讓人可以清楚知道相對位置或是附近的店家。我覺得這個API蠻容易學習的，w3school 網站真的講得很棒。">
+<meta name="twitter:image" content="http://boringpig.github.io/images/google/Map.jpg">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://boringpig.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-Google-Maps基本認識" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h4 class="article-title" itemprop="name">
+      Google Maps基本認識
+    </h4>
+  
+
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/uncategorized/Google-Maps基本認識/" class="article-date">
+  <time datetime="2016-09-12T14:10:17.000Z" itemprop="datePublished">2016-09-12</time>
+</a>
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <img src="/images/google/Map.jpg" width="500">
+<p>現在很多商業或是部落格的網站，強調地方的所在位置，不僅給地址還會用地圖給別人看，讓人可以清楚知道相對位置或是附近的店家。我覺得這個API蠻容易學習的，<a href="http://www.w3schools.com/graphics/google_maps_intro.asp" target="_blank" rel="external">w3school</a> 網站真的講得很棒。<br><a id="more"></a></p>
+<h2 id="Type-介紹"><a href="#Type-介紹" class="headerlink" title="Type 介紹"></a>Type 介紹</h2><p>Google map 顯示的類型</p>
+<ul>
+<li>ROADMAP : 2D map (default)</li>
+<li>SATELLITE : photographic map 衛星上拍照的圖</li>
+<li>HYBRID : photographic map + roads and city names</li>
+<li>TERRAIN : 包括山、河流地圖<h2 id="Overlay-介紹"><a href="#Overlay-介紹" class="headerlink" title="Overlay 介紹"></a>Overlay 介紹</h2>Overlay 在 google map 是指在眾多地方的經緯度集合而成的形狀</li>
+</ul>
+<ul>
+<li>Marker : 單一個地方就會顯示預設箭頭的形狀。</li>
+<li>Polyline : 兩個以上的地方就會連成一條直線。</li>
+<li>Polygon : 多個直線組成一個”封閉”迴圈的形狀。</li>
+<li>Info Windows : 單一個地方顯示訊息框的內容，可搭配 marker 使用。</li>
+<li>Custom overlays : 除了 google map 預設的也可以客製化形狀。</li>
+</ul>
+<h2 id="Event介紹"><a href="#Event介紹" class="headerlink" title="Event介紹"></a>Event介紹</h2><p>Google map 除了顯示之外，也提供事件處理像是：click、center_changed 等等，可以參考<a href="http://www.w3schools.com/graphics/google_maps_events.asp" target="_blank" rel="external">w3school的官網</a>、<a href="https://developers.google.com/maps/documentation/javascript/events?hl=zh-tw" target="_blank" rel="external">google官方文件</a>，舉例幾個蠻簡單的實例。</p>
+<ul>
+<li>第一個範例：<br>這是當使用者點擊 marker 地標的圖案會拉近，可以該改 setZoom() 裡的數字試看看<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">google.maps.event.addListener(marker,<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  map.setZoom(<span class="number">9</span>);</div><div class="line">  map.setCenter(marker.getPosition());</div><div class="line">&#125;);</div></pre></td></tr></table></figure></li>
+<li>第二個範例：<br>這是當使用者離開我們設立 marker 地標，10秒鐘之後會自動回地標的位置<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">google.maps.event.addListener(map,<span class="string">'center_changed'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">window</span>.setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;               </div><div class="line">	map.panTo(marker.getPosition());</div><div class="line">    &#125;,<span class="number">10000</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="Control-Panel介紹"><a href="#Control-Panel介紹" class="headerlink" title="Control Panel介紹"></a>Control Panel介紹</h2></li>
+</ul>
+<p>Default Panel :</p>
+<ul>
+<li>Zoom : 地圖上右下角有個 “+/-“ buttons 來控制地圖的遠近</li>
+<li>Pan : 地圖上有個手的圖案用來控制地圖平移</li>
+<li>MapType : 地圖上左上角可以讓你選擇地圖的類型，像是衛星圖、地形圖等等</li>
+<li>Street View : 地圖上右下角 Pegman icon 用來拉到地圖上顯示街道圖</li>
+</ul>
+<p>More Control :</p>
+<ul>
+<li>Scale : 顯示地圖上比例尺 <img src="https://i.imgur.com/ilJDzct.png" alt=""></li>
+<li>Rotate : 使用街道圖時，顯示 circular icon 讓你可以旋轉地圖的位置</li>
+<li>Overview Map : 拉近地方位置，可以顯示更寬廣的 viewpoint 像是河流、山脈等著名景點</li>
+</ul>
+<p>更改特定 control option :</p>
+<ul>
+<li>範例 :<br>更改地圖右下角 “+/-“ buttons的大小<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">zoomControl:<span class="literal">true</span>,</div><div class="line">zoomControlOptions: &#123;</div><div class="line">    style:google.maps.ZoomControlStyle.SMALL</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h2 id="Basic-使用"><a href="#Basic-使用" class="headerlink" title="Basic 使用"></a>Basic 使用</h2><h3 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h3><p> 首先要有根節點的container，讓google map的script可以導入進來<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"googleMap"</span> <span class="attr">style</span>=<span class="string">"width:100%;height:500px;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><p>到 google developer 啟動 <a href="https://developers.google.com/maps/documentation/javascript/?hl=zh-tw" target="_blank" rel="external">google map api</a> 取得金鑰</p>
+<p><img src="https://i.imgur.com/sWjA3yT.png" alt=""></p>
+<p><img src="https://i.imgur.com/FvZFFPC.png" alt=""></p>
+<h3 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h3><p>放在 head 的 tag 裡，才可以顯示出來<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"http://maps.googleapis.com/maps/api/js?key=你的金鑰"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div></pre></td></tr></table></figure></p>
+<h3 id="Step-4"><a href="#Step-4" class="headerlink" title="Step 4"></a>Step 4</h3><p>設定地標的經緯度<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> location = <span class="keyword">new</span> google.maps.LatLng(<span class="number">23.703492</span>, <span class="number">120.546112</span>);</div></pre></td></tr></table></figure></p>
+<h3 id="Step-5"><a href="#Step-5" class="headerlink" title="Step 5"></a>Step 5</h3><p>設定你想要的地圖屬性<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> mapProp = &#123;</div><div class="line">	center: location,</div><div class="line">    	zoom: <span class="number">17</span>,</div><div class="line">	mapTypeId: google.maps.MapTypeId.TERRAIN</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<h3 id="Step-6"><a href="#Step-6" class="headerlink" title="Step 6"></a>Step 6</h3><p>new 一個地圖<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> map = <span class="keyword">new</span> google.maps.Map(<span class="built_in">document</span>.getElementById(<span class="string">"googleMap"</span>), mapProp);</div></pre></td></tr></table></figure></p>
+<h3 id="Step-7"><a href="#Step-7" class="headerlink" title="Step 7"></a>Step 7</h3><p>設立地標的形狀<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> marker=<span class="keyword">new</span> google.maps.Marker(&#123;</div><div class="line">    map: map,</div><div class="line">    position:location,</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h3 id="Step-8"><a href="#Step-8" class="headerlink" title="Step 8"></a>Step 8</h3><p>設立地標的資訊<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> infowindow = <span class="keyword">new</span> google.maps.InfoWindow(&#123;</div><div class="line">   content:<span class="string">"Hello, I'm here."</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">infowindow.open(map,marker);</div></pre></td></tr></table></figure></p>
+<h3 id="Step-9"><a href="#Step-9" class="headerlink" title="Step 9"></a>Step 9</h3><p>建立地圖<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">    </div><div class="line">google.maps.event.addDomListener(<span class="built_in">window</span>, <span class="string">'load'</span>, initialize);</div></pre></td></tr></table></figure></p>
+<h3 id="Step-10"><a href="#Step-10" class="headerlink" title="Step 10"></a>Step 10</h3><p>蠻容易的，動手做一個屬於自己的 google map 吧～</p>
+<p><img src="https://i.imgur.com/7SI1DX4.png" alt=""></p>
+<hr>
+<h1 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h1><h5 id="w3school官網"><a href="#w3school官網" class="headerlink" title="w3school官網"></a><a href="http://www.w3schools.com/graphics/google_maps_intro.asp" target="_blank" rel="external">w3school官網</a></h5>
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/Laravel/發佈Laravel5-3到Amazon-EC2-Ubuntu-Serve/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">發佈Laravel5.3到Amazon EC2(Ubuntu Serve)&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+
+</section>
+    
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+  </div>
+</body>
+</html>
