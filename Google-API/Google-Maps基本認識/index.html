@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://i.imgur.com/sWjA3yT.png">
 <meta property="og:image" content="https://i.imgur.com/FvZFFPC.png">
 <meta property="og:image" content="https://i.imgur.com/7SI1DX4.png">
-<meta property="og:updated_time" content="2016-09-12T14:25:11.000Z">
+<meta property="og:updated_time" content="2016-09-12T14:26:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Google Maps基本認識">
 <meta name="twitter:description" content="現在很多商業或是部落格的網站，強調地方的所在位置，不僅給地址還會用地圖給別人看，讓人可以清楚知道相對位置或是附近的店家。我覺得這個API蠻容易學習的，w3school 網站真的講得很棒。">
@@ -109,11 +109,14 @@
 </ul>
 <h2 id="Event介紹"><a href="#Event介紹" class="headerlink" title="Event介紹"></a>Event介紹</h2><p>Google map 除了顯示之外，也提供事件處理像是：click、center_changed 等等，可以參考<a href="http://www.w3schools.com/graphics/google_maps_events.asp" target="_blank" rel="external">w3school的官網</a>、<a href="https://developers.google.com/maps/documentation/javascript/events?hl=zh-tw" target="_blank" rel="external">google官方文件</a>，舉例幾個蠻簡單的實例。</p>
 <ul>
-<li>第一個範例：<br>這是當使用者點擊 marker 地標的圖案會拉近，可以該改 setZoom() 裡的數字試看看<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">google.maps.event.addListener(marker,<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  map.setZoom(<span class="number">9</span>);</div><div class="line">  map.setCenter(marker.getPosition());</div><div class="line">&#125;);</div></pre></td></tr></table></figure></li>
-<li>第二個範例：<br>這是當使用者離開我們設立 marker 地標，10秒鐘之後會自動回地標的位置<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">google.maps.event.addListener(map,<span class="string">'center_changed'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">window</span>.setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;               </div><div class="line">	map.panTo(marker.getPosition());</div><div class="line">    &#125;,<span class="number">10000</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h2 id="Control-Panel介紹"><a href="#Control-Panel介紹" class="headerlink" title="Control Panel介紹"></a>Control Panel介紹</h2></li>
+<li>第一個範例：<br>這是當使用者點擊 marker 地標的圖案會拉近，可以該改 setZoom() 裡的數字試看看</li>
 </ul>
-<p>Default Panel :</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">google.maps.event.addListener(marker,<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  map.setZoom(<span class="number">9</span>);</div><div class="line">  map.setCenter(marker.getPosition());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>第二個範例：<br>這是當使用者離開我們設立 marker 地標，10秒鐘之後會自動回地標的位置</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">google.maps.event.addListener(map,<span class="string">'center_changed'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">window</span>.setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;               </div><div class="line">	map.panTo(marker.getPosition());</div><div class="line">    &#125;,<span class="number">10000</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="Control-Panel介紹"><a href="#Control-Panel介紹" class="headerlink" title="Control Panel介紹"></a>Control Panel介紹</h2><p>Default Panel :</p>
 <ul>
 <li>Zoom : 地圖上右下角有個 “+/-“ buttons 來控制地圖的遠近</li>
 <li>Pan : 地圖上有個手的圖案用來控制地圖平移</li>
@@ -122,15 +125,15 @@
 </ul>
 <p>More Control :</p>
 <ul>
-<li>Scale : 顯示地圖上比例尺 <img src="https://i.imgur.com/ilJDzct.png" alt=""></li>
+<li>Scale : 顯示地圖上比例尺<img src="https://i.imgur.com/ilJDzct.png" alt=""></li>
 <li>Rotate : 使用街道圖時，顯示 circular icon 讓你可以旋轉地圖的位置</li>
 <li>Overview Map : 拉近地方位置，可以顯示更寬廣的 viewpoint 像是河流、山脈等著名景點</li>
 </ul>
 <p>更改特定 control option :</p>
 <ul>
-<li>範例 :<br>更改地圖右下角 “+/-“ buttons的大小<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">zoomControl:<span class="literal">true</span>,</div><div class="line">zoomControlOptions: &#123;</div><div class="line">    style:google.maps.ZoomControlStyle.SMALL</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
+<li>範例 :<br>更改地圖右下角 “+/-“ buttons的大小</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">zoomControl:<span class="literal">true</span>,</div><div class="line">zoomControlOptions: &#123;</div><div class="line">    style:google.maps.ZoomControlStyle.SMALL</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
 <h2 id="Basic-使用"><a href="#Basic-使用" class="headerlink" title="Basic 使用"></a>Basic 使用</h2><h3 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h3><p> 首先要有根節點的container，讓google map的script可以導入進來<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"googleMap"</span> <span class="attr">style</span>=<span class="string">"width:100%;height:500px;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><p>到 google developer 啟動 <a href="https://developers.google.com/maps/documentation/javascript/?hl=zh-tw" target="_blank" rel="external">google map api</a> 取得金鑰</p>
