@@ -224,7 +224,7 @@
 
 
     
-      <article id="post.ejs-Git入門" class="article article-type-post.ejs" itemscope itemprop="blogPost">
+      <article id="post.ejs-Git基本認識" class="article article-type-post.ejs" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -232,7 +232,7 @@
         
   
     <h4 itemprop="name">
-      <a class="article-title" href="/Git/Git入門/">Git入門</a>
+      <a class="article-title" href="/GitHub/Git基本認識/">Git基本認識</a>
     </h4>
   
 
@@ -240,39 +240,34 @@
       </header>
     
     <div class="article-meta">
-      <a href="/Git/Git入門/" class="article-date">
+      <a href="/GitHub/Git基本認識/" class="article-date">
   <time datetime="2016-07-27T07:40:08.000Z" itemprop="datePublished">2016-07-27</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Git/">Git</a>
+    <a class="article-category-link" href="/categories/GitHub/">GitHub</a>
   </div>
 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><ul>
-<li><a href="https://git-scm.com/download/win" target="_blank" rel="external">git下載</a></li>
-<li><a href="https://www.sourcetreeapp.com/download/" target="_blank" rel="external">SourceTree下載</a><h2 id="語法認識"><a href="#語法認識" class="headerlink" title="語法認識"></a>語法認識</h2>| 語法 | 描述 |<br>| —— | ———– |<br>|<code>git init</code>|在local初始化repository|<br>|<code>git add .</code>|新增所有檔案到git|<br>|<code>git add Readme.md</code>|新增指定的檔案到git|<br>|<code>git commit -m</code>|對於新增的檔案發出commit|<br>|<code>git commit -am</code>|對於舊有的檔案修改後發出的add、commit|<br>|<code>git status</code>|查看目前git狀態|<br>|<code>git log</code>|查看目前git的所有歷史紀錄，包括commit、add過的檔案等等|<br>|<code>git diff</code>|查看檔案被修改的內容|<br>|<code>git clone</code>|從remote端複製到local端的git|</li>
-</ul>
-<h2 id="Git-Flow"><a href="#Git-Flow" class="headerlink" title="Git Flow"></a>Git Flow</h2><img src="/images/github/flow.png" width="600">
-<ul>
-<li><strong>master branch</strong> : 只接受 develop 和 Release 的 merge，為最後發佈的版本。<ul>
-<li><strong>hotfix branch</strong> : 用來處理已釋出版本需要修改錯誤，最後在merge回來並標上發佈的版本。</li>
-</ul>
-</li>
-<li><strong>develop branch</strong> : 所有的feature都從這邊分支出去，最後在merge回來。<ul>
-<li><strong>release branch</strong> : 凍結develop的function進行測試和修改，作為master釋出的版本tag。</li>
-<li><strong>feature branch</strong> : 主要為develop開發新增的功能。</li>
-</ul>
-</li>
-<li><strong>Pull Request</strong> : 建立一個branch描述新功能在發佈Request，確認後才merge，最後再deploy程式碼。  </li>
-</ul>
-<h2 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h2><h4 id="Step1"><a href="#Step1" class="headerlink" title="Step1."></a>Step1.<img src="https://i.imgur.com/wzhSi8Y.png" alt="first"></h4><h4 id="Step2"><a href="#Step2" class="headerlink" title="Step2."></a>Step2.<img src="https://i.imgur.com/bcQjUld.png" alt="second"></h4><h5 id="直接clone下來到local的repository並建立index-html"><a href="#直接clone下來到local的repository並建立index-html" class="headerlink" title="直接clone下來到local的repository並建立index.html"></a>直接<code>clone</code>下來到<strong>local的repository</strong>並建立<code>index.html</code></h5><h5 id="在網址上打xxx-github-io即可出現靜態的網頁"><a href="#在網址上打xxx-github-io即可出現靜態的網頁" class="headerlink" title="在網址上打xxx.github.io即可出現靜態的網頁"></a>在網址上打<code>xxx.github.io</code>即可出現靜態的網頁</h5><h5 id="搭配Hexo主題變成屬於自己的blog"><a href="#搭配Hexo主題變成屬於自己的blog" class="headerlink" title="搭配Hexo主題變成屬於自己的blog"></a>搭配<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo主題</a>變成屬於自己的blog</h5>
+        <img src="/images/github/git.jpeg" width="500">
+<p>身為工程師，不管是負責的專案或是開發中套件一定隨著時間久了會越來越多，那程式的版本控制就相當重要;花許久時間的心血才完成的專案不見可是非常悲劇的事，所以檔案的備份也是很重要的;工作上團隊合作也比較常用到 <a href="https://git-scm.com/download/win">git</a>，所以一定要懂得操作。<br>
+        
+          <p class="article-more-link">
+            <a href="/GitHub/Git基本認識/#more">Read More</a>
+          </p>
+        
       
     </div>
     
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li></ul>
+
+      </footer>
     
   </div>
   
