@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Laravel 5.2 心得分享目錄 - Jeffery Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="引言
+我原本是寫一般的 php 網頁，接觸到 Laravel 之後發現資料夾結構、MVC框架真的會影響你對程式邏輯思考和耐心，對於第一次接觸 Framework 的我來說有點不太能搞懂 Laravel 所要傳達的設計理念，不過真的很感謝 Laracast、Laravel中文官方、Laravel社團、點燈坊、YISH.IM 等等資源很豐富，只看自己願不願意花時間去吸收理解，也很感謝大大們默默付出和">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Laravel 5.2 心得分享目錄">
+<meta property="og:url" content="http://boringpig.github.io/Laravel/Laravel-5-2-心得分享目錄/index.html">
+<meta property="og:site_name" content="Jeffery Blog">
+<meta property="og:description" content="引言
+我原本是寫一般的 php 網頁，接觸到 Laravel 之後發現資料夾結構、MVC框架真的會影響你對程式邏輯思考和耐心，對於第一次接觸 Framework 的我來說有點不太能搞懂 Laravel 所要傳達的設計理念，不過真的很感謝 Laracast、Laravel中文官方、Laravel社團、點燈坊、YISH.IM 等等資源很豐富，只看自己願不願意花時間去吸收理解，也很感謝大大們默默付出和">
+<meta property="og:image" content="http://boringpig.github.io/images/laravel/Laravel5.2.png">
+<meta property="og:updated_time" content="2016-09-19T14:14:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Laravel 5.2 心得分享目錄">
+<meta name="twitter:description" content="引言
+我原本是寫一般的 php 網頁，接觸到 Laravel 之後發現資料夾結構、MVC框架真的會影響你對程式邏輯思考和耐心，對於第一次接觸 Framework 的我來說有點不太能搞懂 Laravel 所要傳達的設計理念，不過真的很感謝 Laracast、Laravel中文官方、Laravel社團、點燈坊、YISH.IM 等等資源很豐富，只看自己願不願意花時間去吸收理解，也很感謝大大們默默付出和">
+<meta name="twitter:image" content="http://boringpig.github.io/images/laravel/Laravel5.2.png">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://boringpig.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-Laravel-5-2-心得分享目錄" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h4 class="article-title" itemprop="name">
+      Laravel 5.2 心得分享目錄
+    </h4>
+  
+
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/Laravel/Laravel-5-2-心得分享目錄/" class="article-date">
+  <time datetime="2016-09-19T14:12:27.000Z" itemprop="datePublished">2016-09-19</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Laravel/">Laravel</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <img src="/images/laravel/Laravel5.2.png" width="650">
+<p>引言</p>
+<p>我原本是寫一般的 php 網頁，接觸到 Laravel 之後發現資料夾結構、MVC框架真的會影響你對程式邏輯思考和耐心，對於第一次接觸 Framework 的我來說有點不太能搞懂 Laravel 所要傳達的設計理念，不過真的很感謝 <a href="https://laracasts.com/" target="_blank" rel="external">Laracast</a>、<a href="https://laravel.tw/docs/5.2" target="_blank" rel="external">Laravel中文官方</a>、<a href="https://www.facebook.com/groups/laravel.tw/" target="_blank" rel="external">Laravel社團</a>、<a href="http://oomusou.io/" target="_blank" rel="external">點燈坊</a>、<a href="https://yish.im/" target="_blank" rel="external">YISH.IM</a> 等等資源很豐富，只看自己願不願意花時間去吸收理解，也很感謝大大們默默付出和分享。</p>
+<a id="more"></a>
+<h1 id="Version"><a href="#Version" class="headerlink" title="Version"></a>Version</h1><p>Laravle 5.2.31</p>
+<hr>
+<h1 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h1><p>以下是我使用 Laravel 開發經驗的目錄，如果有疏漏或錯誤還請大大們指點。</p>
+<h2 id="Laravel-5-2-使用技巧-一"><a href="#Laravel-5-2-使用技巧-一" class="headerlink" title="- Laravel 5.2 使用技巧 (一) :"></a>- Laravel 5.2 使用技巧 (一) :</h2>
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Laravel-5-2/">Laravel 5.2</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/Laravel/Custom-Pagination/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Custom Pagination&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+
+</section>
+    
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+  </div>
+</body>
+</html>

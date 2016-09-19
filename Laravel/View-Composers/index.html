@@ -15,7 +15,7 @@
 <meta property="og:image" content="https://i.imgur.com/uT28Y1x.png">
 <meta property="og:image" content="https://i.imgur.com/7ygcgLk.png">
 <meta property="og:image" content="https://i.imgur.com/sL7ACHv.png">
-<meta property="og:updated_time" content="2016-09-19T08:48:21.000Z">
+<meta property="og:updated_time" content="2016-09-19T08:48:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="View Composers">
 <meta name="twitter:description" content="當多個 Pages 共用一個 blade，不想要每一個 controller 都寫相同的 code 傳入到 view 顯示出來，就可以考慮用 Laravel 的 view composer 來解決">
@@ -105,7 +105,7 @@
 <h3 id="Step-3-設定-config"><a href="#Step-3-設定-config" class="headerlink" title="Step 3 設定 config"></a>Step 3 設定 config</h3><p>到 config/app.php</p>
 <figure class="highlight php"><figcaption><span>&nbsp;&nbsp;&nbsp;config/app.php</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="string">'providers'</span> =&gt; [</div><div class="line">    App\Providers\ComposerServiceProvider::class,</div><div class="line"> ]</div></pre></td></tr></table></figure>
 <h3 id="Step-4-顯示-View"><a href="#Step-4-顯示-View" class="headerlink" title="Step 4 顯示 View"></a>Step 4 顯示 View</h3><p>到 blade 使用變數</p>
-<figure class="highlight php"><figcaption><span>&nbsp;&nbsp;&nbsp; *.blade.php</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src= <span class="string">" $avatar_url "</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight php"><figcaption><span>&nbsp;&nbsp;&nbsp; *.blade.php</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"$avatar_url"</span>&gt;</div></pre></td></tr></table></figure>
 <p>執行結果</p>
 <p><img src="https://i.imgur.com/sL7ACHv.png" alt=""></p>
 <p>這樣就成功啦～</p>
@@ -126,6 +126,14 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/Laravel/Event-Listener/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          Event &amp; Listener
+        
+      </div>
+    </a>
   
   
     <a href="/Laravel/FileSystem-Amazon-S3/" id="article-nav-older" class="article-nav-link-wrap">
