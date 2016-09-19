@@ -814,6 +814,7 @@ a.article-title:hover,
   overflow: auto;
   color: #fff;
   line-height: 22.4px;
+  margin-bottom: 20px;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
